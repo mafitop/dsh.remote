@@ -30,7 +30,7 @@ export class Constants {
   /** 本应用包名（须与 AppScope/app.json5 一致；实况窗/提醒的 WantAgent 用） */
   static readonly BUNDLE_NAME: string = 'com.mafit.dshremote'
   /** 应用版本（与根 package.json / AppScope 对齐） */
-  static readonly APP_VERSION: string = '0.10.9'
+  static readonly APP_VERSION: string = '0.10.19'
   /** 后台轮询开关 */
   static readonly KEY_BG_POLL: string = 'background_poll'
   /** 后台轮询：令牌失效标记（连续 401 后置位，设置页提示重新配对） */

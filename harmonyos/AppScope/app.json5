@@ -2,8 +2,8 @@
   "app": {
     "bundleName": "com.mafit.dshremote",
     "vendor": "mafit",
-    "versionCode": 8048,
-    "versionName": "0.10.17",
+    "versionCode": 8050,
+    "versionName": "0.10.19",
     "buildVersion": "1",
     "icon": "$media:layered_image",
     "label": "$string:app_name"

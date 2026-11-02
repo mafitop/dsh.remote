@@ -11,7 +11,7 @@
 | 平台 | 仅 HarmonyOS 手机 |
 | 兼容 SDK | `26.0.0`（HarmonyOS 7.0） |
 | 包名 | `com.mafit.dshremote` |
-| 版本 | 0.10.17（客户端与仓库对齐） |
+| 版本 | 0.10.19（客户端与仓库对齐） |
 | 设备类型 | phone |
 | 更新 | 由笔记本网关分发 HAP，手机内直接下载 |
 | 户外联网 | 局域网 + Tailscale 组网（见 `docs/TAILSCALE.md`） |
