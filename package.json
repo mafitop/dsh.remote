@@ -1,0 +1,19 @@
+{
+  "name": "dsh-remote-harmonyos",
+  "version": "0.10.9",
+  "private": true,
+  "description": "个人自用分支：DSH Remote 鸿蒙（HarmonyOS 7 / API 26）客户端 + 笔记本端网关",
+  "bin": "gateway.js",
+  "scripts": {
+    "start": "node gateway.js --supervise",
+    "gateway": "node gateway.js",
+    "check": "bash scripts/verify.sh",
+    "build:hap": "bash scripts/build-hap.sh",
+    "sign:hap": "bash scripts/sign-hap.sh",
+    "install:hap": "bash scripts/install-hap.sh",
+    "publish:hap": "bash scripts/publish-hap.sh"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

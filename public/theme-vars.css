@@ -1,0 +1,83 @@
+/* DSH Remote · 固定皮肤「草原孤塔」
+ * 只保留一套配色：html 默认即草原孤塔（橄榄军绿主色 + 陶土砖红强调）。
+ * 不再有 data-theme 切换，也不再加载皮肤包与主题选择器。 */
+
+/* ============ 通用变量 ============ */
+:root {
+  --dsr-radius: 14px;
+  --dsr-safe-top: max(env(safe-area-inset-top, 0px), var(--native-top, 0px));
+  --dsr-safe-b: max(env(safe-area-inset-bottom, 0px), var(--native-bottom, 0px));
+}
+/* Native geometry already subtracts any system padding consumed by the WebView. */
+html[data-native-insets="overlap"] {
+  --dsr-safe-top: var(--native-top, 0px);
+  --dsr-safe-b: var(--native-bottom, 0px);
+}
+html { color-scheme: light; }
+
+html,
+html[data-theme="neutral"] {
+  --dsr-neutral-0: #FFFFFF;
+  --dsr-neutral-1: #FAF7EE;
+  --dsr-neutral-2: #F1EDDF;
+  --dsr-neutral-3: #E6DFC8;
+  --dsr-neutral-4: #D5CDB4;
+  --dsr-neutral-5: #B8AF91;
+  --dsr-neutral-6: #8E866D;
+  --dsr-neutral-7: #6B6450;
+  --dsr-neutral-8: #454133;
+  --dsr-neutral-9: #2B2B2B;
+
+  --dsr-bg: #EEF1E8;
+  --dsr-bg-2: #E2E8DB;
+  --dsr-panel: #FAFBF6;
+  --dsr-panel-2: #FFFFFF;
+  --dsr-line: #C2CCB7;
+  --dsr-divider: rgba(31, 40, 28, .13);
+  --dsr-text: #1F281C;
+  --dsr-muted: #4E5D49;
+  --dsr-text-disabled: #768171;
+
+  /* 橄榄军绿 = 主色(按钮/开关/底部导航块); 陶土砖红 = 强调(徽标/图标/链接) */
+  --dsr-accent: #47643C;
+  --dsr-on-accent: #F5F1E3;
+  --dsr-accent-strong: #36502E;
+  --dsr-accent-soft: #47643C1F;
+  --dsr-accent-line: #47643C66;
+  --dsr-accent-2: #789568;
+  --dsr-accent-2-strong: #5D7C50;
+  --dsr-accent-2-soft: #7895681F;
+  --dsr-accent-2-line: #78956866;
+  --dsr-brand-a: #47643C;
+  --dsr-brand-b: #A95F3F;
+
+  --dsr-success: #1E5C33;
+  --dsr-success-soft: #1E5C331F;
+  --dsr-success-line: #1E5C3366;
+  --dsr-warning: #8A4B0C;
+  --dsr-warning-soft: #8A4B0C1F;
+  --dsr-warning-line: #8A4B0C66;
+  --dsr-on-warning: #FFFFFF;
+  --dsr-error: #8A2A1F;
+  --dsr-error-soft: #8A2A1F1F;
+  --dsr-error-line: #8A2A1F66;
+  --dsr-info: #1F4E7A;
+  --dsr-info-soft: #1F4E7A1F;
+  --dsr-info-line: #1F4E7A66;
+
+  --dsr-head-bg: rgba(238, 241, 232, .96);
+  --dsr-nav-bg: rgba(250, 251, 246, .96);
+  --dsr-nav-muted: #5B6856;
+  --dsr-nav-active: #36502E;
+  --dsr-nav-badge-bg: #A95F3F;
+  --dsr-nav-badge-text: #FFFFFF;
+  --dsr-composer-bg: rgba(250, 251, 246, .95);
+  --dsr-overlay: rgba(43, 43, 43, .4);
+  --dsr-code-bg: rgba(0, 0, 0, .07);
+  --dsr-shadow: rgba(31, 40, 28, .17);
+  --dsr-glow: rgba(71, 100, 60, .36);
+  --dsr-head-running-bg: linear-gradient(90deg, rgba(238, 241, 232, .96), rgba(120, 149, 104, .26), rgba(255, 255, 255, .78), rgba(120, 149, 104, .26), rgba(238, 241, 232, .96));
+  --dsr-head-running-line: rgba(71, 100, 60, .58);
+  --dsr-head-interrupted-bg: linear-gradient(90deg, rgba(238, 241, 232, .96), rgba(169, 95, 63, .18), rgba(255, 255, 255, .78), rgba(169, 95, 63, .18), rgba(238, 241, 232, .96));
+  --dsr-head-interrupted-line: rgba(169, 95, 63, .58);
+}
